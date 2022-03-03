@@ -1,0 +1,25 @@
+.header ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.header a {
+    padding: 8px;
+    text-decoration: none;
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+textarea{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
