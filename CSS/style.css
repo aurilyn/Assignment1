@@ -22,7 +22,18 @@ footer{
     width: 100%;
 }
 
-textarea {
+textarea, .newNote {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
     background-color: #f2e9e1;
+    border: none;
+    resize: none;
+}
+
+.Save, .Delete {
+    display: flex;
+    flex-direction: row;
+    margin-left: 470px;
     border: none;
 }
