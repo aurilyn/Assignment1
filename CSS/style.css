@@ -22,3 +22,7 @@ footer{
     width: 100%;
 }
 
+textarea {
+    background-color: #f2e9e1;
+    border: none;
+}
