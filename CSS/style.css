@@ -16,7 +16,7 @@ html{
 }
 
 footer{
-    position: sticky;
+    position: absolute;
     bottom: 0;
     text-align: center;
     width: 100%;
@@ -31,9 +31,16 @@ textarea, .newNote {
     resize: none;
 }
 
+button {
+    border: none;
+    background-color: #faf4ed;
+}
 .Save, .Delete {
     display: flex;
     flex-direction: row;
     margin-left: 470px;
-    border: none;
+}
+
+.newNote {
+    margin-left: 300px;
 }
