@@ -1,5 +1,6 @@
-html{
+* {
     background-color: #faf4ed;
+    font-family: 'Inconsolata', monospace;
 }
 
 .header ul{
@@ -28,14 +29,6 @@ footer{
     align-items: center;
     justify-content: center;
 }
-
-.sideContainer {
-    display: flex;
-    height: 100%;
-    align-items: flex-start;
-    justify-content: left;
-}
-
 .noteArea {
     background-color: #f2e9e1;
     border: none;
@@ -62,10 +55,20 @@ button {
 
 .sideNav {
     height: 100%;
-    width: 250px;
+    width: 175px;
     top: 0;
     background-color: beige;
     position: fixed;
+}
+
+.sideNav h1, .sideNav button, .sideNav li, .sideNav ul{
+    background-color: beige;
+}
+.sideNav button {
+    margin-left: 135px;
+}
+.sideNav h1{
+    text-align: center;
 }
 
 .save, .del {
@@ -73,3 +76,28 @@ button {
     display: flex;
     align-items: center;
 }
+
+@Media screen and (max-width: 767px) {
+    .noteArea {
+        width: 200px;
+        height: 100px;
+    }
+    .sideNav {
+        width: 50px;
+    }
+    .sideNav h1, .sideNav ul{
+        font-size: 10px;
+        padding: 0;
+        text-align: center;
+    }
+    .sideNav button {
+        font-size: 10px;
+        margin-left: 20px;
+    }
+    .newNote {
+        text-align: center;
+        padding: 0;
+        margin-left: 100px;
+    }
+}
+
