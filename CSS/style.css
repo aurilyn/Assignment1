@@ -21,11 +21,22 @@ footer{
     text-align: center;
     width: 100%;
 }
-
-textarea, .newNote {
+.container {
     display: flex;
-    flex-direction: row;
-    margin-left: 100px;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sideContainer {
+    display: flex;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: left;
+}
+
+.noteArea {
     background-color: #f2e9e1;
     border: none;
     resize: none;
@@ -43,4 +54,22 @@ button {
 
 .newNote {
     margin-left: 300px;
+}
+
+.sideNav ul {
+    list-style-type: none;
+}
+
+.sideNav {
+    height: 100%;
+    width: 250px;
+    top: 0;
+    background-color: beige;
+    position: fixed;
+}
+
+.save, .del {
+    border: 0;
+    display: flex;
+    align-items: center;
 }
